@@ -4,7 +4,7 @@ const pathName = new URL(Astro.request.url).pathname
 const currentPath = pathName.slice(1)
 ---
 
-<nav class="flex justify-between mb-28">
+<nav class="flex justify-between mt-2">
     <ul class="flex gap-x-5 font-semibold text-base">
         <li class={currentPath === "" ? "border-b-4 border-tertiary" : ""}><a href="/">About</a></li>
         <li class={currentPath === "projects" ? "border-b-4 border-tertiary" : ""}><a href="/projects">Projects</a></li>
