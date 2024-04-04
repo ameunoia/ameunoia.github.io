@@ -1,10 +1,98 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import '@fontsource/martel/200.css';
+import '@fontsource/martel/300.css';
+import '@fontsource/martel/400.css';
+import '@fontsource/martel/600.css';
+import '@fontsource/martel/700.css';
+import '@fontsource/martel/800.css';
+import '@fontsource/martel/900.css';
+import "@fontsource/trispace";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="About">
 	<main>
+		<div class="mt-28">
+			<h1 class="text-2xl">
+				<span class="font-extralight">&lt;<span class="text-red-500">h1</span>&gt;Hi, </span>
+				<span class="font-trispace">ARGA SATYA MULYONO </span>
+				<span class="font-extralight">here!&lt;/<span class="text-red-500">h1</span>&gt;</span>
+			</h1>
+			<h2 class="w-9/12 mt-2">
+				<span class="font-extralight">&lt;<span class="text-red-500">p</span>&gt;</span>
+				<span class="font-trispace">Welcome to my personal slice of the internet. Take a look and enjoy.</span>
+				<span class="font-extralight">&lt;/<span class="text-red-500">p</span>&gt;</span>
+			</h2>
+		</div>
 
+		<div>
+			<h3 class="font-trispace mt-28 text-xl text-center text-white">WHO I AM</h3>
+			<p class="font-trispace font-light mt-8">Hi everyone, you can call me Arga. I currently work at a software development company in Garut as a backend developer (sometimes I also work on the frontend 😁). Personally, I'm dedicated to ongoing learning and growth in this field. Therefore, I created a blog to share my learning journey, experiences, and perhaps some helpful tips or tricks.</p>
+			<p class="font-trispace font-light mt-4">Aside from programming, I also enjoy various activities such as playing games and exercising.</p>
+		</div>
+		<div>
+			<h3 class="font-trispace mt-16 text-xl text-center text-white">WORK EXPERIENCE</h3>
+			<ul class="list-disc mt-8">
+				<li class="font-trispace ">
+					<h4 class="text-lg">GeTech Indonesia</h4>
+					<div class="flex flex-col">
+						<span class="opacity-50">Backend Developer</span>
+						<span class="opacity-50">Nov ‘23 - present</span>
+						<ul class="list-circle ml-4 mt-3">
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+					</div>
+				</li>
+				<li class="font-trispace mt-4">
+					<h4 class="text-lg">Kopnus Pos Indonesia (Intern)</h4>
+					<div class="flex flex-col">
+						<span class="opacity-50">Web Developer</span>
+						<span class="opacity-50">Jul ‘22 - Aug ‘22</span>
+						<ul class="list-circle ml-4 mt-3">
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Lorem ipsum dolor sit amet</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<h3 class="font-trispace mt-16 text-xl text-center text-white">FAVORITE TECH STACK</h3>
+			<div class="font-trispace flex mt-8">
+				<h4 class=" w-2/12">Language</h4>
+				<span class="">:</span>
+				<p>JavaScript && TypeScript && Go && PHP</p>
+			</div>
+			<div class="font-trispace flex mt-8">
+				<h4 class="w-2/12">Frontend</h4>
+				<span>:</span>
+				<p>ReactJS && TailwindCSS</p>
+			</div>
+			<div class="font-trispace flex mt-8">
+				<h4 class="w-2/12">Backend</h4>
+				<span>:</span>
+				<p>ExpressJS && Go Fiber</p>
+			</div>
+			<div class="font-trispace flex mt-8">
+				<h4 class="w-2/12">FullStuck</h4>
+				<span>:</span>
+				<p>NextJS && Astro && Laravel</p>
+			</div>
+			<div class="font-trispace flex mt-8">
+				<h4 class="w-2/12">Database</h4>
+				<span>:</span>
+				<p>PostgreSQL && MySQL</p>
+			</div>
+			<div class="font-trispace flex mt-8">
+				<h4 class="w-2/12">Tools</h4>
+				<span>:</span>
+				<p>Git && NodeJS && Docker</p>
+			</div>
+		</div>
 	</main>
 </Layout>
