@@ -17,7 +17,7 @@ export default {
         quarternary: "#4F4557",
       },
       fontFamily: {
-        martel: ["martel-sans", "sans-serif"],
+        martel: ["Martel Sans", "sans-serif"],
         trispace: ["trispace", "sans-serif"],
       },
     },
