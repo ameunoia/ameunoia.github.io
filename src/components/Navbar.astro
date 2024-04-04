@@ -1,9 +1,15 @@
-<nav class="flex justify-between">
+
+---
+const pathName = new URL(Astro.request.url).pathname
+const currentPath = pathName.slice(1)
+---
+
+<nav class="flex justify-between mb-28">
     <ul class="flex gap-x-5 font-semibold text-base">
-        <li class="border-b-4 border-tertiary"><a href="/">About</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Connect</a></li>
+        <li class={currentPath === "" ? "border-b-4 border-tertiary" : ""}><a href="/">About</a></li>
+        <li class={currentPath === "projects" ? "border-b-4 border-tertiary" : ""}><a href="/projects">Projects</a></li>
+        <li class={currentPath === "blog" ? "border-b-4 border-tertiary" : ""}><a href="#">Blog</a></li>
+        <li class={currentPath === "connect" ? "border-b-4 border-tertiary" : ""}><a href="#">Connect</a></li>
     </ul>
     <span>X</span>
 </nav>
