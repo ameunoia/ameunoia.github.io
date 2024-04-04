@@ -14,9 +14,10 @@ export default {
         primary: "#393646",
         secondary: "#F4EEE0",
         tertiary: "#6D5D6E",
+        quarternary: "#4F4557",
       },
       fontFamily: {
-        martel: ["martel", "sans-serif"],
+        martel: ["martel-sans", "sans-serif"],
         trispace: ["trispace", "sans-serif"],
       },
     },
