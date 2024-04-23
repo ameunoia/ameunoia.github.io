@@ -6,7 +6,7 @@ import profile from "../assets/profile.png";
 
 <Layout title="Connect">
     <main class="mt-20">
-        <h1 class="text-2xl w-8/12 mx-auto">
+        <h1 class="text-2xl w-11/12 md:w-8/12 mx-auto">
             <span class="font-extralight">&lt;<span class="text-red-500">h2</span>&gt;</span>
             <span class="font-light font-trispace">Let's connect! Knock on my door
                 and say hello!</span>
@@ -16,18 +16,18 @@ import profile from "../assets/profile.png";
         <div class="mt-16">
             <Image src={profile} width={236} height={236} alt="Profile Image" class="mx-auto"/>
         </div>
-        <div class="mt-16 flex justify-between">
-            <a href="">
+        <div class="mt-16 flex md:justify-between flex-col md:flex-row gap-y-3">
+            <a href="" class="mx-auto">
                 <span class="font-extralight">&lt;<span class="text-red-500">li</span>&gt;</span>
                 <span class="font-light font-trispace">Email</span>
                 <span class="font-extralight">&lt;/<span class="text-red-500">li</span>&gt;</span>
             </a>
-            <a href="">
+            <a href="" class="mx-auto">
                 <span class="font-extralight">&lt;<span class="text-red-500">li</span>&gt;</span>
                 <span class="font-light font-trispace">LinkedIn</span>
                 <span class="font-extralight">&lt;/<span class="text-red-500">li</span>&gt;</span>
             </a>
-            <a href="">
+            <a href="" class="mx-auto">
                 <span class="font-extralight">&lt;<span class="text-red-500">li</span>&gt;</span>
                 <span class="font-light font-trispace">Telegram</span>
                 <span class="font-extralight">&lt;/<span class="text-red-500">li</span>&gt;</span>
