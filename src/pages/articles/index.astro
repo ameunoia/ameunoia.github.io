@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+const articles = await getCollection('articles')
+
+function convertDate(fullDate: string) {
+    const date = new Date(fullDate);
+    const bulanList = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
+
+    const tahun = date.getFullYear();
+    const bulan = bulanList[date.getMonth()];
+
+    return bulan + " '" + (tahun % 100);
+}
+---
+
+<Layout title="Blogs">
+    <main class="mt-20">
+        <h1 class="mx-auto text-2xl 2-11/12 md:w-9/12 mb-16">
+            <span class="font-extralight">&lt;<span class="text-red-500">div</span>&gt;</span>
+            <span class="font-trispace font-light">Just some random thoughts.</span>
+        </h1>
+
+        <ul class="space-y-5">
+            {
+                articles.map((article: any) => {
+                    return (
+                    <li>
+                        <div class="font-trispace space-y-1 cursor-pointer hover:bg-black hover:bg-opacity-20 rounded-lg px-3 py-2">
+                            <a href={`/articles/${article.slug}`}>
+                                <h2 class="font-semibold">{ article.data.title }</h2>
+                                <h3>{ convertDate(article.data.date) }</h3>
+                                <span class="bg-secondary px-4 py-1 rounded-lg text-primary inline-block">{article.data.tags[0]}</span>
+                            </a>
+                        </div>
+                    </li>
+                    )
+                })
+            }
+        </ul>
+        <h1 class="mx-auto text-2xl w-9/12 mt-16">
+            <span class="font-extralight">&lt;/<span class="text-red-500">div</span>&gt;</span>
+        </h1>
+    </main>
+</Layout>
