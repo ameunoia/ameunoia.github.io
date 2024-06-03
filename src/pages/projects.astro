@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
+import plant from "../assets/projects/plant-mockup.jpg"
 ---
 
 <Layout title="Projects">
@@ -10,7 +12,8 @@ import Layout from "../layouts/Layout.astro";
             <span class="font-extralight">&lt;/<span class="text-red-500">section</span>&gt;</span>
         </h1>
         <div class="mt-28 grid grid-cols-1 md:grid-cols-2 justify-items-center md:justify-between gap-y-8">
-            <div class="h-64 w-80 bg-quarternary rounded-md py-4 px-5">
+            <div class="h-64 w-80 bg-quarternary rounded-md py-4 px-5 relative">
+                <Image src={plant} alt="Profile Image" class="absolute -z-10" />
                 <h2 class="text-lg my-4 text-white">Lorem Ipsum</h2>
                 <p class="font-extralight font-trispace text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum molestiae cum asperiores saepe modi, molestias velit praesentium hic cupiditate quia sit et architecto culpa nulla</p>
                 <div class="font-extralight text-xs font-trispace text-opacity-5 mt-7">
