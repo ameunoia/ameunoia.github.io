@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         martel: ["Martel Sans", "sans-serif"],
         trispace: ["trispace", "sans-serif"],
+        bricolage: ["Bricolage Grotesque", "sans-serif"],
       },
     },
   },

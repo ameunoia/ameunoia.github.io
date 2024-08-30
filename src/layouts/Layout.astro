@@ -1,29 +1,39 @@
 ---
-import Navbar from '../components/Navbar.astro';
+import Navbar from "../components/Navbar.astro";
 
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="bg-primary text-secondary font-martel max-w-[1440px] mx-auto">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Ameunoia - {title}</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Trispace:wght@100..800&display=swap" rel="stylesheet">
-	</head>
-	<body class="w-11/12 md:w-6/12 mx-auto mb-10">
-		<Navbar />
-		<slot />
-		<span class="font-trispace font-extralight flex justify-end mt-20">2024 - future © ameunoia</span>
-	</body>
+<html
+  lang="en"
+  class="bg-primary text-secondary font-martel max-w-[1440px] mx-auto"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Ameunoia - {title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Trispace:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-11/12 md:w-6/12 mx-auto mb-10">
+    <Navbar />
+    <slot />
+    <span class="font-trispace font-extralight flex justify-end mt-20"
+      >2024 - future © ameunoia</span
+    >
+  </body>
 </html>

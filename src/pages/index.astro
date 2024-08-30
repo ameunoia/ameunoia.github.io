@@ -1,91 +1,140 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import And from "../components/And.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="About">
-	<main class="mt-28">
-		<div>
-			<h1 class="text-2xl">
-				<span class="font-extralight">&lt;<span class="text-red-500">h1</span>&gt;Hi, </span>
-				<span class="font-trispace">ARGA SATYA MULYONO </span>
-				<span class="font-extralight">here!&lt;/<span class="text-red-500">h1</span>&gt;</span>
-			</h1>
-			<h2 class="w-11/12 mt-2">
-				<span class="font-extralight">&lt;<span class="text-red-500">p</span>&gt;</span>
-				<span class="font-trispace">Welcome to my little digital universe. Explore and enjoy!</span>
-				<span class="font-extralight">&lt;/<span class="text-red-500">p</span>&gt;</span>
-			</h2>
-		</div>
-		<div>
-			<h3 class="font-trispace mt-28 text-xl text-center text-white">WHO I AM</h3>
-			<p class="font-trispace font-light mt-8">Hi everyone, you can call me Arga. I currently work at a software development company in Garut as a backend developer (sometimes I also work on the frontend 😁). Personally, I'm dedicated to ongoing learning and growth in this field. Therefore, I created a blog to share my learning journey, experiences, and perhaps some helpful tips or tricks.</p>
-			<p class="font-trispace font-light mt-4">Aside from programming, I also enjoy various activities such as playing games and exercising.</p>
-		</div>
-		<div>
-			<h3 class="font-trispace mt-16 text-xl text-center text-white">WORK EXPERIENCE</h3>
-			<ul class="list-disc mt-8">
-				<li class="font-trispace ">
-					<h4 class="text-lg">GeTech Indonesia</h4>
-					<div class="flex flex-col">
-						<span class="opacity-50">Backend Developer</span>
-						<span class="opacity-50">Nov ‘23 - present</span>
-						<ul class="list-circle ml-4 mt-3 font-light space-y-1">
-							<li>Building a web-based Enterprise Resource Planning (ERP) system, focusing on the server-side logic, database management, and API development.</li>
-							<li>Identifying and resolving issues in existing applications.</li>
-							<li>Adding new features to existing applications based on client requirements.</li>
-							<li>Creating and maintaining APIs for seamless communication between the frontend and backend systems, enabling data exchange and processing.</li>
-							<li>Using version control systems like Git to manage codebase changes, collaborate with other developers, and track project progress.</li>
-							<li>Documenting code, APIs, and system architecture to facilitate understanding, maintenance, and future development by other team members.</li>
-						</ul>
-					</div>
-				</li>
-				<li class="font-trispace mt-4">
-					<h4 class="text-lg">Kopnus Pos Indonesia (Intern)</h4>
-					<div class="flex flex-col">
-						<span class="opacity-50">Web Developer</span>
-						<span class="opacity-50">Jul ‘22 - Aug ‘22</span>
-						<ul class="list-circle ml-4 mt-3 font-light space-y-1">
-							<li>Developed an internal simple web application using laravel to facilitate data input and management.</li>
-							<li>Designed an intuitive user interface.</li>
-							<li>Managed database structure.</li>
-							<li>Integrated the user interface with the backend server to dynamically store and fetch data.</li>
-						</ul>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div>
-			<h3 class="font-trispace mt-16 text-xl text-center text-white mb-8">FAVORITE TECH STACK</h3>
-			<div class="font-trispace flex flex-col mt-4 md:flex-row">
-				<h4 class="md:w-2/12">Language</h4>
-				<span class="md:inline hidden">:</span>
-				<p>JavaScript && TypeScript && Go && PHP</p>
-			</div>
-			<div class="font-trispace flex flex-col mt-4 md:flex-row ">
-				<h4 class="md:w-2/12">Frontend</h4>
-				<span class="md:inline hidden">:</span>
-				<p>ReactJS && TailwindCSS</p>
-			</div>
-			<div class="font-trispace flex flex-col mt-4 md:flex-row ">
-				<h4 class="md:w-2/12">Backend</h4>
-				<span class="md:inline hidden">:</span>
-				<p>ExpressJS && Go Fiber && Laravel</p>
-			</div>
-			<div class="font-trispace flex flex-col mt-4 md:flex-row ">
-				<h4 class="md:w-2/12">FullStuck</h4>
-				<span class="md:inline hidden">:</span>
-				<p>NextJS && Astro && Laravel</p>
-			</div>
-			<div class="font-trispace flex flex-col mt-4 md:flex-row ">
-				<h4 class="md:w-2/12">Database</h4>
-				<span class="md:inline hidden">:</span>
-				<p>PostgreSQL && MySQL</p>
-			</div>
-			<div class="font-trispace flex flex-col mt-4 md:flex-row ">
-				<h4 class="md:w-2/12">Tools</h4>
-				<span class="md:inline hidden">:</span>
-				<p>Git && NodeJS && Docker</p>
-			</div>
-		</div>
-	</main>
+  <main class="mt-28">
+    <div>
+      <h1 class="text-2xl">
+        <span class="font-extralight"
+          >&lt;<span class="text-red-500">h1</span>&gt;Hi,
+        </span>
+        <span class="font-trispace">ARGA SATYA MULYONO </span>
+        <span class="font-extralight"
+          >here!&lt;/<span class="text-red-500">h1</span>&gt;</span
+        >
+      </h1>
+      <h2 class="w-11/12 mt-2">
+        <span class="font-extralight"
+          >&lt;<span class="text-red-500">p</span>&gt;</span
+        >
+        <span class="font-trispace"
+          >Welcome to my little digital universe. Explore and enjoy!</span
+        >
+        <span class="font-extralight"
+          >&lt;/<span class="text-red-500">p</span>&gt;</span
+        >
+      </h2>
+    </div>
+    <div>
+      <h3 class="font-trispace mt-28 text-xl text-center text-white">
+        WHO I AM
+      </h3>
+      <p class="font-trispace font-light mt-8 text-justify">
+        Hi everyone, you can call me <span class="text-red-500">Arga</span>. I
+        currently work at a software development company in Garut as a backend
+        developer (sometimes I also work on the frontend 😁). Personally, I'm
+        dedicated to ongoing learning and growth in this field. Therefore, I
+        created a blog to share my learning journey, experiences, and perhaps
+        some helpful tips or tricks.
+      </p>
+      <p class="font-trispace font-light mt-4 text-justify">
+        Aside from programming, I also enjoy various activities such as playing
+        games and exercising.
+      </p>
+    </div>
+    <div>
+      <h3 class="font-trispace mt-16 text-xl text-center text-white">
+        WORK EXPERIENCE
+      </h3>
+      <ul class="list-disc mt-8">
+        <li class="font-trispace">
+          <h4 class="text-lg text-red-500">GeTech Indonesia</h4>
+          <div class="flex flex-col">
+            <span class="opacity-50">Backend Developer</span>
+            <span class="opacity-50">Nov ‘23 - present</span>
+            <ul class="list-circle ml-4 mt-3 font-light space-y-1">
+              <li>
+                Identifying and resolving issues in existing applications.
+              </li>
+              <li>
+                Adding new features to existing applications based on client
+                requirements.
+              </li>
+              <li>
+                Creating and maintaining APIs for seamless communication between
+                the frontend and backend systems, enabling data exchange and
+                processing.
+              </li>
+              <li>
+                Using version control systems like Git to manage codebase
+                changes, collaborate with other developers, and track project
+                progress.
+              </li>
+              <li>
+                Documenting code, APIs, and system architecture to facilitate
+                understanding, maintenance, and future development by other team
+                members.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="font-trispace mt-4">
+          <h4 class="text-lg text-red-500">Kopnus Pos Indonesia (Intern)</h4>
+          <div class="flex flex-col">
+            <span class="opacity-50">Web Developer</span>
+            <span class="opacity-50">Jul ‘22 - Aug ‘22</span>
+            <ul class="list-circle ml-4 mt-3 font-light space-y-1">
+              <li>
+                Developed an internal simple web application using laravel to
+                facilitate data input and management.
+              </li>
+              <li>Designed an intuitive user interface.</li>
+              <li>Managed database structure.</li>
+              <li>
+                Integrated the user interface with the backend server to
+                dynamically store and fetch data.
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-trispace mt-16 text-xl text-center text-white mb-8">
+        FAVORITE TECH STACK
+      </h3>
+      <div class="font-trispace flex flex-col mt-4 md:flex-row">
+        <h4 class="md:w-2/12">Language</h4>
+        <span class="md:inline hidden">:</span>
+        <p>JavaScript <And /> TypeScript <And /> Go <And /> PHP</p>
+      </div>
+      <div class="font-trispace flex flex-col mt-4 md:flex-row">
+        <h4 class="md:w-2/12">Frontend</h4>
+        <span class="md:inline hidden">:</span>
+        <p>ReactJS <And /> TailwindCSS</p>
+      </div>
+      <div class="font-trispace flex flex-col mt-4 md:flex-row">
+        <h4 class="md:w-2/12">Backend</h4>
+        <span class="md:inline hidden">:</span>
+        <p>ExpressJS <And /> Go Fiber <And /> Laravel <And /> Hono</p>
+      </div>
+      <div class="font-trispace flex flex-col mt-4 md:flex-row">
+        <h4 class="md:w-2/12">FullStack</h4>
+        <span class="md:inline hidden">:</span>
+        <p>NextJS <And /> Astro <And /> Laravel</p>
+      </div>
+      <div class="font-trispace flex flex-col mt-4 md:flex-row">
+        <h4 class="md:w-2/12">Database</h4>
+        <span class="md:inline hidden">:</span>
+        <p>PostgreSQL <And /> MySQL</p>
+      </div>
+      <div class="font-trispace flex flex-col mt-4 md:flex-row">
+        <h4 class="md:w-2/12">Tools</h4>
+        <span class="md:inline hidden">:</span>
+        <p>Git <And /> NodeJS <And /> Bun <And /> Docker</p>
+      </div>
+    </div>
+  </main>
 </Layout>
