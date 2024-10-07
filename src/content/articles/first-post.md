@@ -1,5 +1,5 @@
 ---
-title: "Ini postingan markdown"
+title: "Ini postingan markdown yang akan panjang sekali apakah akan offside dan bakal jelek banget hasilnya"
 date: 2024-04-28 #year-month-date
 tags: ["Random"]
 ---

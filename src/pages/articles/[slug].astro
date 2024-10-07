@@ -3,23 +3,47 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const allArticles = await getCollection("articles");
-    
-    return allArticles.map((article: any) => {
-        return{
-            params: {slug: article.slug},
-            props: {article}
-            };
-        });
+  const allArticles = await getCollection("articles");
+
+  return allArticles.map((article: any) => {
+    return {
+      params: { slug: article.slug },
+      props: { article },
     };
-    const {article} = Astro.props as {article: CollectionEntry<"articles">};
-    const {Content} = await article.render();
+  });
+}
+const { article } = Astro.props as { article: CollectionEntry<"articles"> };
+const { Content } = await article.render();
+
+function convertDate(fullDate: string) {
+  const date = new Date(fullDate);
+  const bulanList = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "Mei",
+    "Jun",
+    "Jul",
+    "Agu",
+    "Sep",
+    "Okt",
+    "Nov",
+    "Des",
+  ];
+
+  const tahun = date.getFullYear();
+  const bulan = bulanList[date.getMonth()];
+  const day = date.getDate();
+
+  return `${day} ${bulan} '${tahun % 100}`;
+}
 ---
 
 <Layout title={article.data.title}>
-    <main>
-        <h1>{article.data.title}</h1>
-        <p>Published at {article.data.date}</p>
-        <Content />
-    </main>
+  <main>
+    <h1 class="mt-20 text-3xl text-justify">{article.data.title}</h1>
+    <p class="my-6">Published at {convertDate(article.data.date)}</p>
+    <Content />
+  </main>
 </Layout>
