@@ -41,7 +41,7 @@ function convertDate(fullDate: string) {
 ---
 
 <Layout title={article.data.title}>
-  <main>
+  <main class="prose prose-invert max-w-none">
     <h1 class="mt-20 text-3xl text-justify">{article.data.title}</h1>
     <p class="my-6">Published at {convertDate(article.data.date)}</p>
     <Content />

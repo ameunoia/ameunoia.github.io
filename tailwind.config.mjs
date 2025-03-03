@@ -21,7 +21,17 @@ export default {
         trispace: ["trispace", "sans-serif"],
         bricolage: ["Bricolage Grotesque", "sans-serif"],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#fff",
+            h1: {
+              color: "#fff",
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

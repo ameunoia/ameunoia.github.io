@@ -1,11 +1,11 @@
 ---
-title: "Ini postingan markdown yang akan panjang sekali apakah akan offside dan bakal jelek banget hasilnya"
-date: 2024-04-28 #year-month-date
-tags: ["Random"]
-slug: "ini postingan markdown slug"
+title: "Kerja jadi web developer selama 1 tahun, dapet apa sih?"
+date: 2025-03-03 #year-month-date
+tags: ["Random", "Journey"]
+slug: "kerja-satu-tahun-jadi-web-developer"
 ---
 
-# Ini Postingan Pertama
+## Ini Postingan Pertama
 
 ```javascript
 async function getById(id: number) {

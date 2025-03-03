@@ -45,9 +45,13 @@ function convertDate(fullDate: string) {
                 <a href={`/articles/${article.slug}`}>
                   <h2 class="font-semibold">{article.data.title}</h2>
                   <h3>{convertDate(article.data.date)}</h3>
-                  <span class="bg-secondary px-4 py-1 rounded-lg text-primary inline-block">
-                    {article.data.tags[0]}
-                  </span>
+                  {article.data.tags.map((tag: string) => {
+                    return (
+                      <span class="bg-secondary px-3 py-1 rounded-lg text-primary inline-block mr-1 mt-3">
+                        {tag}
+                      </span>
+                    );
+                  })}
                 </a>
               </div>
             </li>
