@@ -5,6 +5,7 @@ import wise from "../assets/projects/wise.png";
 import hris from "../assets/projects/hris.svg";
 import ProjectCard from "../components/ProjectCard.astro";
 import hris_fe from "../assets/projects/hris-fe.png";
+import hris_app from "../assets/projects/hris-app.jpg";
 ---
 
 <Layout title="Projects">
@@ -47,6 +48,13 @@ import hris_fe from "../assets/projects/hris-fe.png";
         description="Frontend for Human Resource Information System for managing employee, payroll, and other HR related data."
         techStack={["NextJS", "TypeScript", "TailwindCSS"]}
         image={hris_fe}
+      />
+
+      <ProjectCard
+        title="HRIS - Mobile App"
+        description="Mobile App for employee to attendance, payroll, and other HR related data."
+        techStack={["React Native", "Expo", "TailwindCSS"]}
+        image={hris_app}
       />
     </div>
   </main>
