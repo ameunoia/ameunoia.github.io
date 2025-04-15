@@ -1,11 +1,10 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import fotoroom from "../assets/projects/fotoroom.svg";
 import wise from "../assets/projects/wise.png";
 import hris from "../assets/projects/hris.svg";
-import And from "../components/And.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import hris_fe from "../assets/projects/hris-fe.png";
 ---
 
 <Layout title="Projects">
@@ -41,6 +40,13 @@ import ProjectCard from "../components/ProjectCard.astro";
         description="REST API Service for Human Resource Information System for managing employee, payroll, and other HR related data."
         techStack={["Bun", "Hono", "Prisma", "Postgresql", "Docker"]}
         image={hris}
+      />
+
+      <ProjectCard
+        title="HRIS - Frontend"
+        description="Frontend for Human Resource Information System for managing employee, payroll, and other HR related data."
+        techStack={["NextJS", "TypeScript", "TailwindCSS"]}
+        image={hris_fe}
       />
     </div>
   </main>
